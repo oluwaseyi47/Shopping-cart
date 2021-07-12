@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING CART</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bstp4/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container-fluid mt-5">
+        <h2>SHOPPING CART</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="table-responsive">
+                    <table id="myTable" class="table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Name</th>
+                                <th>QTY</th>
+                                <th>Price</th>
+                                <th class="text-right">
+                                    <span id="amount" class="amount">
+                                        Amount
+                                    </span>   
+                                </th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="product-img">
+                                        <div class="img-product">
+                                            <img src="download (1).jpg" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>Product One</p>
+                                </td>
+                                <td>
+                                    <div class="button-container">
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                        <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <input type="text" value="72" class="price form-control" disabled>
+                                </td>
+                                <td align="right">$ <span id="amount" class="amount">0</span>
+                                </td>
+                                <td>
+                                    <button class="btn btn-danger" type="button">REMOVE</button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+<!-- another item -->
+<tbody>
+    <tr>
+        <td>
+            <div class="product-img">
+                <div class="img-product">
+                    <img src="download.jpg" alt="">
+                </div>
+            </div>
+        </td>
+        <td>
+            <p>Product Two</p>
+        </td>
+        <td>
+            <div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div>
+        </td>
+        <td>
+            <input type="text" value="90" class="price form-control" disabled>
+        </td>
+        <td align="right">$ <span id="amount" class="amount">0</span>
+        </td>
+        <td>
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </td>
+    </tr>
+</tbody>
+
+
+<!-- another item -->
+<tbody>
+    <tr>
+        <td>
+            <div class="product-img">
+                <div class="img-product">
+                    <img src="download (1).jpg" alt="">
+                </div>
+            </div>
+        </td>
+        <td>
+            <p>Product Three</p>
+        </td>
+        <td>
+            <div class="button-container">
+                <button class="cart-qty-plus" type="button" value="+">+</button>
+                <input type="text" name="qty" min="0" class="qty form-control" value="0"/>
+                <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div>
+        </td>
+        <td>
+            <input type="text" value="80" class="price form-control" disabled>
+        </td>
+        <td align="right">$ <span id="amount" class="amount">0</span>
+        </td>
+        <td>
+            <button class="btn btn-danger" type="button">REMOVE</button>
+        </td>
+    </tr>
+</tbody>
+
+
+
+
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td align="right">
+                                    <strong>TOTAL = $ <span id="total" class="total">0
+
+                                    </span></strong>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="index.js"></script>
+    <script src="bstp4/js/jquery-3.2.1.min.js"></script>
+    <script src="bstp4/js/bootstrap.min.js"></script>
+</body>
+</html>
